@@ -11,6 +11,8 @@ from forms import LoginForm, RegisterForm, CreatePostForm, CommentForm
 from flask_gravatar import Gravatar
 import os
 
+# This blog is run on Heroku on the reh-test environment (https://reh-test-site.herokuapp.com/)
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 ckeditor = CKEditor(app)
